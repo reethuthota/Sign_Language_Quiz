@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Language Detection Quiz</h1>
+        <button id="start-button">Start</button>
+        <div id="target-section">
+            <h2>Target: <span id="word"></span></h2>
+        </div>
+        <div id="timer">10</div>
+        <div id="video-container">
+            <img id="video" style="width: 640px; height: auto;" alt="Camera Feed">
+        </div>
+        <div id="result">
+            <h2 id="result-text"></h2>
+            <button id="next-word-button">Next Word</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
